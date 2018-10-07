@@ -4,105 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/itravel.css">
-    <title>iTravel</title>
+    <link rel="stylesheet" type="text/css" href="styles/itravel.css">
+    <title>iTraveled</title>
 </head>
 <body>
-    <h1>Welcome to iTraveled</h1>
-    <p><a href="#">Sign In</a> or <a href="#">Register a New User</a></p>
+    <div id="container">
+        <p>logo<img src=""></p>
 
-<!-- user login form  -->
-    <form action="">
-        <h2>Sign In</h2>
-        <fieldset>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-        </fieldset>
-        <fieldset>
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password">
-        </fieldset>
-        <input type="submit" value="login">
-    </form>
-<!-- end user login form -->
+        <h1>Welcome to iTraveled</h1>
+        <p><a href="#">Sign In</a> or <a href="#">Register a New User</a></p>
 
-<!-- new user register form -->
-    <form action="">
-        <h2>New User Registration</h2>
-        <fieldset>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-        </fieldset>
-        <fieldset>
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password">
-        </fieldset>
-        <input type="submit" value="Register New User">
-    </form>
-<!-- end user register form -->
-
-<!-- user destinations input form -->
-    <div id="tripInfo">
-        <h2>Trip Info</h2>
+    <!-- user login form  -->
         <form action="">
+            <h2>Sign In</h2>
             <fieldset>
-                <label for="city">City</label>
-                <input type="text" name="city" id="city">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
             </fieldset>
             <fieldset>
-                <label for="stateProvince">State/Province</label>
-                <input type="text" name="stateProvince" id="stateProvince">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
             </fieldset>
-            <fieldset>
-                <label for="country">Country</label>
-                <input type="text" name="country" id="country">
-            </fieldset>
-            <fieldset>
-                <label for="arrivalDate">Arrival Date</label>
-                <input type="date" name="arrivalDate" id="arrivalDate">
-            </fieldset>
-            <fieldset>
-                <label for="departureDate">Departure Date</label>
-                <input type="date" name="departureDate" id="departureDate">
-            </fieldset>
-            <fieldset>
-                <label for="travelNotes">Travel Notes</label>
-                <textarea name="travelNotes" id="travelNotes" placeholder="What did you do here?"></textarea>
-            </fieldset>
-            <fieldset>
-                <label for="rateThisTrip">Rate This Trip</label>
-                <select name="Rate This Trip">
-                    <option value="awesome">AWESOME!!! Must go back ASAP!</option>
-                    <option value="notBad">I'd go back again, but no rush</option>
-                    <option value="oneAndDone">Been there, done that</option>
-                    <option value="awful">Not great, but worth a second chance</option>
-                    <option value="awful">Never ever return</option>
-                </select>
-            </fieldset>
-            <input type="submit" value="add new trip">
+            <input type="submit" value="login">
         </form>
-    </div>
-<!-- end user destinations input form -->
+    <!-- end user login form -->
 
-
-    <div id="myTrips">
-        <h1>My Trips</h1>
-
-        <!-- placeholder text for output -->
-        <h2 class="locationInfo">City, State/Province, Country</h2>
-        <p>Arrival / Departure Dates</p>
-        <p>Travel notes</p>
-        <p>Trip Rating</p>
-        <!-- end placeholder text for output -->
-
-        <!-- edit / delete trip info  -->
-        <form>
-            <input type="submit" value="edit trip">
-            <input type="submit" value="delete trip">
+    <!-- new user register form -->
+        <form action="">
+            <h2>New User Registration</h2>
+            <fieldset>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+            </fieldset>
+            <input type="submit" value="Register New User">
         </form>
-        <!-- end edit / delete trip info -->
-    </div>
+    <!-- end user register form -->
 
+    <!-- user destinations input form -->
+        <div id="tripInfo">
+            <h2>Trip Info</h2>
+            <form action="">
+                <fieldset>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </fieldset>
+                <fieldset>
+                    <label for="stateProvince">State/Province</label>
+                    <input type="text" name="stateProvince" id="stateProvince">
+                </fieldset>
+                <fieldset>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+                </fieldset>
+                <fieldset>
+                    <label for="arrivalDate">Arrival Date</label>
+                    <input type="date" name="arrivalDate" id="arrivalDate">
+                </fieldset>
+                <fieldset>
+                    <label for="departureDate">Departure Date</label>
+                    <input type="date" name="departureDate" id="departureDate">
+                </fieldset>
+                <fieldset>
+                    <label for="travelNotes">Travel Notes</label>
+                    <textarea name="travelNotes" id="travelNotes" placeholder="What did you do here?"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="rateThisTrip">Rate This Trip</label>
+                    <select name="Rate This Trip">
+                        <option value="awesome">AWESOME!!! Must go back ASAP!</option>
+                        <option value="notBad">I'd go back again, but no rush</option>
+                        <option value="oneAndDone">Been there, done that</option>
+                        <option value="awful">Not great, but worth a second chance</option>
+                        <option value="awful">Never ever return</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="add new trip">
+            </form>
+        </div>
+    <!-- end user destinations input form -->
+
+
+    <!-- My Trips Main Page -->
+        <div id="myTrips">
+            <h1>My Trips</h1>
+            <p>You have no trips yet</p>
+
+            <!-- add new trip -->
+            <form>
+                <input type="submit" value="add new trip">
+            </form>
+
+
+            <!-- placeholder text for output -->
+            <h2 class="locationInfo">City, State/Province, Country</h2>
+            <p>Arrival / Departure Dates</p>
+            <p>Travel notes</p>
+            <p>Trip Rating</p>
+
+            <!-- edit / delete trip info  -->
+            <form>
+                <input type="submit" value="edit trip">
+                <input type="submit" value="delete trip">
+                <input type="submit" value="add new trip">
+            </form>
+
+        </div>
+        
+    </div>
 <!-- javascript files -->
     <script type="text/javascript" src="scripts/iTravel.js"></script>
 </body>
